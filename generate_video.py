@@ -2,9 +2,11 @@ import tensorflow as tf
 import cv2
 import numpy as np
 
-model = tf.keras.models.load_model("models/taher_serve.h5")
 
-label_book = {1:"Start",2:"Release",3:"Loading",4:"Cocking",5:"Accleration",6:"Contact",7:"Deceleration",8:"Finish"}
+model = tf.keras.models.load_model("models/oversampled_taher_serve.h5")
+
+label_book = {0:"Start",1:"Release",2:"Loading",3:"Cocking",4:"Accleration",5:"Contact",6:"Deceleration",7:"Finish"}
+
 
 video_path = "data/back/img-01.mov"
 
@@ -27,7 +29,10 @@ X = np.array(frames)
 X = X / 255.0
 
 
+
 predictions = model.predict(X)
+
+
 
 labels = []
 for pred in predictions:
@@ -56,7 +61,7 @@ cv2.destroyAllWindows()
 
 
 
-out = cv2.VideoWriter('myvideo.mp4',cv2.VideoWriter_fourcc('m', 'p', '4', 'v'),30,(width,height))
+out = cv2.VideoWriter('oversampled_myserve.mov',cv2.VideoWriter_fourcc('m', 'p', '4', 'v'),30,(width,height))
  
 for i in range(len(new_frames)):
     out.write(new_frames[i])
