@@ -17,8 +17,9 @@ For players wanting to improve their serve, this will allow them to serve and ge
 
 ## 8 Serve Part Classifier
 
-
 Model Architecture:
+
+
 ![8_serve_part_classifier](https://user-images.githubusercontent.com/23107070/128397199-04ce619d-838e-490b-b985-0a59c29e7fb0.png)
 
 ## Pose Matching
