@@ -3,7 +3,7 @@
 ## Goal
 
 
-Deploy a real time voice assistant tennis serve coach using edge devices. The AI coach will assess your serve and verbally give feedback to identify incorrect biomechanics.
+Deploy a real time voice assistant tennis serve coach using edge technology. The AI coach will assess your serve and verbally give feedback to identify incorrect biomechanics.
 
 
 ## Background
@@ -13,3 +13,16 @@ Tennis is a sport that requires lots of practice with each type of stroke. Howev
 ## Purpose
 
 For players wanting to improve their serve, this will allow them to serve and get instant feedback to correct mistakes, without the need of paid coaching.
+
+
+## 8 Serve Part Classifier
+
+
+Model Architecture:
+![8_serve_part_classifier](https://user-images.githubusercontent.com/23107070/128397199-04ce619d-838e-490b-b985-0a59c29e7fb0.png)
+
+## Pose Matching
+
+## Voice Assistant
+
+## Edge Deployment
